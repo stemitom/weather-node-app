@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/style.css">
+        <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+        <title>{{title}}</title>
+    </head>
+
+    <body >
+        <div class="main-content">
+            {{>header}}
+            <p>Use this site to get your weather</p>
+
+            <form action="">
+                <input type="text" placeholder="Location" name="" id="">
+                <button type="submit">Search</button>
+            </form>
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+        {{>footer}}
+
+    <script src="./js/dynamic.js"></script>
+    </body>
+</html>
