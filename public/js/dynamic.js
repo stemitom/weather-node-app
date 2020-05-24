@@ -7,7 +7,7 @@ weatherForm.addEventListener('submit', (evt) => {
     evt.preventDefault();
     let location = search.value;
     location = encodeURIComponent(location);
-    const address = 'http://localhost:3000/weather?address=' + location;
+    const address = '/weather?address=' + location;
     messageOne.textContent = 'Loading...';
     messageTwo.textContent = ''
 
