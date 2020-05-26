@@ -3,6 +3,8 @@
     <head>
         <link rel="stylesheet" href="/css/style.css">
         <link rel="shortcut icon" href="/img/weather.png" type="image/x-icon">
+        {{!-- Proper viewport is set for responsivity --}}
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>{{title}}</title>
     </head>
 
@@ -12,8 +14,10 @@
             <p>Use this site to get your weather</p>
 
             <form action="">
-                <input type="text" placeholder="Location" name="" id="">
-                <button type="submit">Search</button>
+                <div class="form-group">
+                    <input type="text" placeholder="Location" name="" id="">
+                    <button type="submit">Search</button>
+                </div>
             </form>
             <p id="message-1"></p>
             <p id="message-2"></p>
